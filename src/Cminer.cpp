@@ -18,7 +18,7 @@ int main(int argc, char const *argv[]) // Compile Command: g++ -std=c++11 Cminer
 	if(argc == 3){
 		PrintHelp(0);
 		MinCaveSizeStr = string(argv[2]);
-		MinCaveSize = stoi(MinCaveSizeStr); // Convert the minimum cave size to integer
+		MinCaveSize = atoi(MinCaveSizeStr.c_str()); // Convert the minimum cave size to integer
 		cout << RESET << BOLDYELLOW << "[*] Minimum cave size set to " << argv[2] << endl;	
 	}
 	else{
